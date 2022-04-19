@@ -51,6 +51,9 @@ function count() {
 }
 let countString = "";
 function countdown() {
+	if (counter == 1) {
+		stopCounter();
+	}
 	counter -= 1;
 	countString = counter.toString().padStart(6, "0");
 
