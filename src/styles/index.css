@@ -10,3 +10,32 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+#clock {
+/*     height: 300px;
+    width: 250px; */
+    font-size: 100px;
+    border-radius: 15px;
+}
+
+.numbers {
+/*     height: 300px;
+    width: 200px; */
+    font-family: 'Pacifico', cursive;
+    font-size: 100px;
+    text-align: center;
+    border-radius: 15px;
+}
+.redondear {
+    border-radius: 15px;
+}
+
+.main {
+    background-color: black;
+    
+
+}
+body {
+/*     box-sizing: border-box
+ */}
