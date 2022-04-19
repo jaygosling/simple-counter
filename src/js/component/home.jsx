@@ -49,10 +49,10 @@ function count() {
 		alert(`The counter reached ${alertMe}`);
 	}
 }
-
+let countString = "";
 function countdown() {
 	counter -= 1;
-	let countString = counter.toString().padStart(6, "0");
+	countString = counter.toString().padStart(6, "0");
 
 	array.forEach(function (value, index) {
 		ReactDOM.render(countString[index], document.querySelector(value));
@@ -143,7 +143,12 @@ function resumeCounter() {
 }
 
 function resetCounter() {
-	counter = -1;
+	counter = 0;
+	countString = counter.toString().padStart(6, "0");
+
+	array.forEach(function (value, index) {
+		ReactDOM.render(countString[index], document.querySelector(value));
+	});
 }
 function alertMeNow() {
 	alertMe = document.querySelector(".alert-me").value;
